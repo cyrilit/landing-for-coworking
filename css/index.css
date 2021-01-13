@@ -27,7 +27,7 @@ body {
 
 .logo {
     color: var(--main-color);
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 3.5rem;
     text-transform: uppercase;
     text-align: center;
@@ -45,6 +45,11 @@ body {
     display: none;
 }
 
+body > header {
+    background-image: url(../img/bg/banner.jpeg);
+    background-size: cover;
+}
+
 header .menu {
     display: none;
 }
@@ -55,6 +60,13 @@ header input:checked ~ .menu {
 
 header .menu {
     flex-direction: column;
+}
+
+header .logo a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--main-color);
+    padding: 3px;
 }
 
 header .menu a {
@@ -88,7 +100,6 @@ header .menu a:hover {
 }
 
 header .banner {
-    background-image: url(../img/bg/banner.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 400px;
@@ -101,9 +112,9 @@ header .banner {
 header .banner h1 {
     color: var(--reverse-color);
     font-size: 3.5rem;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-style: italic;
+    font-style: normal;
 }
 
 .product-card {
