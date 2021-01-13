@@ -10,14 +10,19 @@
 
 :root {
     --main-color: black;
-    --accent-color: rgb(50, 206, 211);
+    --reverse-color: rgb(255, 255, 255);
+    --accent-color: #f55d4a!important;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    max-width: 980px;
+    max-width: 960px;
     margin: auto;
+}
+
+.banner h1::first-letter {
+    color: var(--accent-color);
 }
 
 .logo {
@@ -63,6 +68,7 @@ header .menu a:hover {
     font-weight: bold;
 }
 
+
 @media (min-width: 610px) {
     header nav {
         display: flex;
@@ -82,7 +88,7 @@ header .menu a:hover {
 }
 
 header .banner {
-    background-image: url(../img/baby-yoda.svg);
+    background-image: url(../img/bg/banner.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 400px;
@@ -93,7 +99,7 @@ header .banner {
 }
 
 header .banner h1 {
-    color: var(--accent-color);
+    color: var(--reverse-color);
     font-size: 3.5rem;
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
@@ -124,7 +130,7 @@ header .banner h1 {
     }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 960px) {
     .product-list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -136,15 +142,15 @@ footer form label {
 
 /* Controls */
 
-.button {
+button {
     padding: 0.35em 1.2em;
     border: 0.1em solid #FFFFFF;
     margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    color: #FFFFFF;
+    border-radius: 0.5em;
+    color: var(--main-color);
     text-align: center;
     transition: color 0.7s;
-    background-color: transparent;
+    background-color: var(--reverse-color);
 }
 
 .button:hover {
