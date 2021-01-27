@@ -170,20 +170,20 @@ header .banner h1 {
 }
 
 @media (min-width: 660px) {
-    .product-list {
+    .product-list, .staff-member-list, .press-list, .event-list, .blog-post-list, .testimonial-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 800px) {
-    .product-list {
+    .product-list, .staff-member-list, .press-list, .event-list, .blog-post-list, .testimonial-list {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 960px) {
-    .product-list {
+    .product-list, .staff-member-list, .press-list, .event-list, .blog-post-list, .testimonial-list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
