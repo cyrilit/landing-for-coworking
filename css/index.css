@@ -11,7 +11,8 @@
 :root {
     --main-color: black;
     --reverse-color: rgb(255, 255, 255);
-    --accent-color: #f55d4a!important;
+    --accent-color: #f55d4a;
+    --highlight-color: #556cd5;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
@@ -153,9 +154,52 @@ footer form label {
 
 /* Controls */
 
+.navbutton {
+    margin: 0 auto;
+    border-width: 1px;
+    border-radius: 25px;
+    border-style: solid;
+    padding: 16px 50px;
+
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    font-family: Montserrat,sans-serif;
+    text-decoration: none;
+}
+
+.cold-btn-style {
+    border-color: var(--highlight-color);
+    background-color: var(--reverse-color);
+    color: var(--highlight-color);
+}
+
+.cold-btn-style:hover {
+    border-color: var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: var(--reverse-color);
+}
+
+.hot-btn-style {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--reverse-color);
+}
+
+.hot-btn-style:hover {
+    border-color: var(--accent-color);
+    background-color: var(--reverse-color);
+    color: var(--accent-color);
+}
+
+.navbutton:hover {
+    cursor: pointer;
+}
+
 button {
     padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
+    border: 0.1em solid var(--reverse-color);
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.5em;
     color: var(--main-color);
@@ -165,17 +209,17 @@ button {
 }
 
 .button:hover {
-    color: #000000;
-    background-color: #FFFFFF;
+    color: var(--main-color);
+    background-color: var(--reverse-color);
     cursor: pointer;
 }
 
 .card-button {
-    border-color: black;
-    color: black;
+    border-color: var(--main-color);
+    color: var(--main-color);
 }
 
 .card-button:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--reverse-color);
 }
