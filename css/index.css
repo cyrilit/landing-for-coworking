@@ -169,22 +169,22 @@ header .banner h1 {
     justify-content: space-around;
 }
 
-@media (min-width: 660px) {
-    .product-list, .staff-member-list, .press-list, .event-list, .blog-post-list, .testimonial-list {
+@media (min-width: 640px) {
+    .content-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 800px) {
-    .product-list, .staff-member-list, .press-list, .event-list, .blog-post-list, .testimonial-list {
+    .content-list {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 960px) {
-    .product-list, .staff-member-list, .press-list, .event-list, .blog-post-list, .testimonial-list {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .content-list {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
