@@ -104,6 +104,17 @@ section {
     background-color: var(--bgcolor1);
 }
 
+.about, .press {
+    background-image: url(../img/bg/welcome-press-bg.png);
+    background-size: cover;
+}
+
+.contacts {
+    background-image: url(../img/bg/contacts-bg_1920.jpeg);
+    background-size: cover;
+}
+
+
 /*cards*/
 .rounded {
     border-radius: 20px;
