@@ -208,11 +208,18 @@ header .banner h1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .contacts {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (min-width: 800px) {
     .content-list {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contacts {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
