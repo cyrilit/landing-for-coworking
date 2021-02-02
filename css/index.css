@@ -130,6 +130,14 @@ section {
     background-size: cover;
 }
 
+hr {
+    border: 2px solid; 
+    color: var(--accent-color); 
+    background-color: var(--accent-color); 
+    width: 60px;
+    margin: auto;
+}
+
 
 /*cards*/
 .rounded {
