@@ -215,7 +215,47 @@ hr {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.top-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.top-info a {
+    color: var(--reverse-color);
+}
 
+.follow-social-icons a {
+    border: 1px solid transparent;
+    width: 33px;
+}
+
+.follow-social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.follow-social-icons {    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top-social-icons a {
+    border: 1px solid transparent;
+    width: 33px;
+}
+
+.top-social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.top-social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 @media (min-width: 640px) {
     h1 {        
